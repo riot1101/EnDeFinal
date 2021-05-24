@@ -51,9 +51,17 @@ public class Ende3Test {
         
         return 1;
     }
-     public int testIsPar(){
+     public boolean testIsPar(){
          Ende3 instance = new Ende3 ();
-         return 1;
+         int a = 2; 
+         boolean result = instance.equals(0);
+         if (a%2==0) {
+             return true; 
+             
+         }
+         int expResult = 0;
+         assertEquals(expResult, result);
+         return true;
     }
      public boolean testExtraerPositivos(){
          Ende3 instance = new Ende3 ();
