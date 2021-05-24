@@ -10,9 +10,9 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class Ende3Test {
+public class OperacionesTest {
     
-    public Ende3Test() {
+    public OperacionesTest() {
     }
     
     @BeforeAll
@@ -34,7 +34,7 @@ public class Ende3Test {
     @Test
     public int testRango() {
         
-        Ende3 instance = new Ende3 ();
+        Operaciones instance = new Operaciones ();
         
         System.out.println(" dos parámetros enteros");
         int a = 5;
@@ -52,24 +52,25 @@ public class Ende3Test {
         
     }
     public int testSumRango(){
-        Ende3 instance = new Ende3 ();
+        Operaciones instance = new Operaciones ();
         
         return 1;
     }
-     public boolean testIsPar(){
-         Ende3 instance = new Ende3 ();
-         int a = 2; 
-         boolean result = instance.equals(0);
-         if (a%2==0) {
-             return true; 
-             
-         }
-         int expResult = 0;
+    @Test
+     public void testIsPar(){
+         Operaciones instance = new Operaciones ();
+         
+         int a = 2;
+         
+         instance.isPar(a);
+          
+         boolean result = instance.isPar(a);
+         boolean expResult = true;
          assertEquals(expResult, result);
          return true;
     }
      public boolean testExtraerPositivos(){
-         Ende3 instance = new Ende3 ();
+         Operaciones instance = new Operaciones ();
          return true;
     }
 }
