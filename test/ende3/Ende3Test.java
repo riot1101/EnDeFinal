@@ -39,6 +39,11 @@ public class Ende3Test {
         System.out.println(" dos parámetros enteros");
         int a = 5;
         int b = 9;
+        rango [] = a-b;
+        double result = instance.equals(rango.getLength());
+        
+        double expResult = [5,6,7,8,9];
+        assertEquals(expResult,result);
    
      
         
